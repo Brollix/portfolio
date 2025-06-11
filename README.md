@@ -1,4 +1,4 @@
-# 🌐 Portfolio de Agustín Brollo
+# 🌐 Mi Portfolio
 
 Este sitio web es mi portfolio profesional, desarrollado desde cero con HTML, CSS y JavaScript puro. Está enfocado en mostrar mi perfil como especialista en IT y desarrollador técnico, destacando mi experiencia, proyectos, habilidades y presencia online.
 
