@@ -23,11 +23,11 @@ Este sitio web es mi portfolio profesional, desarrollado desde cero con HTML, CS
 
 ---
 
-## © 2025 Agustín Brollo
-
----
-
 ## 🔗 Enlace online
 
 📍 El sitio está publicado en GitHub Pages:  
 ➡️ [https://brollix.github.io/portfolio](https://brollix.github.io/portfolio)
+
+---
+
+## © 2025 Agustín Brollo
