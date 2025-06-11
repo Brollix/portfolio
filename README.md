@@ -27,5 +27,3 @@ Este sitio web es mi portfolio profesional, desarrollado desde cero con HTML, CS
 
 📍 El sitio está publicado en GitHub Pages:  
 ➡️ [https://brollix.github.io/portfolio](https://brollix.github.io/portfolio)
-
----
