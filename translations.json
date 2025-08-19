@@ -1,0 +1,224 @@
+{
+  "es": {
+    "title": "Agustín Brollo | Especialista en IT",
+    "job_title": "Especialista en IT",
+    "nav_about": "Sobre mí",
+    "nav_experience": "Experiencia",
+    "nav_projects": "Proyectos",
+    "nav_skills": "Habilidades",
+    "nav_contact": "Contacto",
+    "about_title": "Sobre mí",
+    "about_text1": "Soy un especialista en IT con sólida experiencia en infraestructura, soporte técnico y administración de redes. Me formé en entornos corporativos exigentes, como HCL Technologies, donde gestioné redes, configuraciones de switches y tareas de mantenimiento crítico en sistemas empresariales.",
+    "about_text2": "También me desempeño como desarrollador independiente, con foco en C/C++, automatización en Linux, desarrollo de herramientas personalizadas y videojuegos con motor propio. En mis proyectos combino la lógica técnica con una mentalidad práctica y resolutiva.",
+    "about_text3": "Actualmente estoy desarrollando finanzapp, una app móvil de gestión de gastos basada en OCR y análisis inteligente, y mantengo un portfolio activo de proyectos personales publicados en GitHub.",
+    "experience_title": "Experiencia en IT",
+    "experience_it_specialist": "Especialista IT – Entorno corporativo",
+    "experience_it_role": "Administrador de redes y soporte técnico",
+    "experience_it_points": [
+      "Configuración, diagnóstico y mantenimiento de switches de red.",
+      "Gestión de infraestructura IT en entornos corporativos con múltiples niveles de usuario.",
+      "Resolución de incidentes técnicos, soporte a usuarios y documentación de procesos.",
+      "Monitoreo de redes, backups y tareas programadas en sistemas críticos."
+    ],
+    "experience_freelance": "Freelance y entornos mixtos",
+    "experience_freelance_role": "Soporte técnico, desarrollo y automatización",
+    "experience_freelance_points": [
+      "Soporte integral en sistemas Windows y Linux.",
+      "Armado y mantenimiento de estaciones de trabajo para edición y servidores locales.",
+      "Automatización de tareas con scripts en Bash y PowerShell.",
+      "Instalación y configuración de redes domésticas y comerciales.",
+      "Desarrollo de herramientas personalizadas en C/C++ para automatización y optimización.",
+      "Implementación de soluciones en la nube con AWS y despliegue de aplicaciones.",
+      "Desarrollo de videojuegos con motor propio, lógica de juego y animaciones 3D.",
+      "Creación de scripts multiplataforma para procesos de infraestructura."
+    ],
+    "projects_title": "Proyectos",
+    "projects": [
+      {
+        "title": "Servidor AWS Económico",
+        "description": "Configuración desde cero de un servidor Minecraft en AWS EC2, incluyendo puertos, backups automáticos y publicación en GitHub.",
+        "link": "https://github.com/Brollix/minecraft-server"
+      },
+      {
+        "title": "Game of Pong con IA",
+        "description": "Juego Pong en C++ con red neuronal simple para entrenar la IA del oponente. Implementación desde cero con SDL2.",
+        "link": "https://github.com/Brollix/game-of-pong"
+      },
+      {
+        "title": "FinanzApp – Gestión inteligente de gastos personales",
+        "description": "Aplicación móvil de finanzas personales desarrollada en equipo, que permite a los usuarios escanear tickets con OCR, extraer automáticamente los importes y guardar los gastos en una base de datos en la nube.",
+        "link": "https://github.com/Brollix/finanzapp"
+      }
+    ],
+    "skills_title": "Habilidades Técnicas",
+    "skills": [
+      {
+        "title": "💻 Lenguajes de programación",
+        "items": [
+          "C, C++ — desarrollo en bajo nivel, lógica de sistemas y videojuegos",
+          "JavaScript — proyectos frontend puros, animaciones con Three.js",
+          "Python — scripting, OCR, procesamiento de texto e imágenes"
+        ]
+      },
+      {
+        "title": "🖥️ Sistemas y entornos",
+        "items": [
+          "Linux — uso diario, bash scripting, administración general",
+          "Windows Server — instalación, configuración y mantenimiento",
+          "Git / GitHub — flujo de trabajo con ramas, releases, documentación"
+        ]
+      },
+      {
+        "title": "🌐 Infraestructura y redes",
+        "items": [
+          "Configuración de switches y redes LAN",
+          "Administración de infraestructura IT en entornos reales",
+          "Diagnóstico, mantenimiento y soporte técnico integral"
+        ]
+      },
+      {
+        "title": "☁️ Cloud y automatización",
+        "items": [
+          "AWS — EC2, S3, IAM, Lambda, Lightsail, GitHub Pages",
+          "Automatización de backups y despliegue en servidores",
+          "Optimización de servidores por costo, disponibilidad y seguridad"
+        ]
+      },
+      {
+        "title": "🧠 Inteligencia Artificial y computación",
+        "items": [
+          "Implementación de redes neuronales desde cero (sin frameworks)",
+          "Algoritmos evolutivos: fitness, mutación, selección",
+          "Integración de modelos GPT-4 / LLM para análisis semántico"
+        ]
+      },
+      {
+        "title": "🛠️ Herramientas y tecnologías",
+        "items": [
+          "SDL2 / SFML — desarrollo de videojuegos en C++",
+          "React Native (Expo) — interfaces móviles multiplataforma",
+          "Supabase — base de datos, autenticación y REST API",
+          "PaddleOCR — extracción de texto desde imágenes (Python)",
+          "Three.js — animaciones 3D en la web",
+          "Shell scripting — Bash, CMD, PowerShell"
+        ]
+      }
+    ],
+    "contact_title": "Contacto",
+    "email": "Email",
+    "linkedin": "LinkedIn",
+    "github": "GitHub",
+    "copyright": "© 2025 Agustín Brollo"
+  },
+  "en": {
+    "title": "Agustín Brollo | IT Specialist",
+    "job_title": "IT Specialist",
+    "nav_about": "About Me",
+    "nav_experience": "Experience",
+    "nav_projects": "Projects",
+    "nav_skills": "Skills",
+    "nav_contact": "Contact",
+    "about_title": "About Me",
+    "about_text1": "I am an IT specialist with solid experience in infrastructure, technical support, and network administration. I was trained in demanding corporate environments, such as HCL Technologies, where I managed networks, switch configurations, and critical maintenance tasks in enterprise systems.",
+    "about_text2": "I also work as an independent developer, focusing on C/C++, Linux automation, custom tools development, and game development with my own engine. In my projects, I combine technical logic with a practical and solution-oriented mindset.",
+    "about_text3": "I am currently developing finanzapp, a mobile expense management app based on OCR and intelligent analysis, and I maintain an active portfolio of personal projects published on GitHub.",
+    "experience_title": "IT Experience",
+    "experience_it_specialist": "IT Specialist – Corporate Environment",
+    "experience_it_role": "Network and Technical Support Administrator",
+    "experience_it_points": [
+      "Configuration, diagnosis, and maintenance of network switches.",
+      "IT infrastructure management in corporate environments with multiple user levels.",
+      "Technical incident resolution, user support, and process documentation.",
+      "Network monitoring, backups, and scheduled tasks in critical systems."
+    ],
+    "experience_freelance": "Freelance and Mixed Environments",
+    "experience_freelance_role": "Technical Support, Development, and Automation",
+    "experience_freelance_points": [
+      "Comprehensive support for Windows and Linux systems.",
+      "Assembly and maintenance of workstations for editing and local servers.",
+      "Task automation with Bash and PowerShell scripts.",
+      "Installation and configuration of home and business networks.",
+      "Development of custom tools in C/C++ for automation and optimization.",
+      "Implementation of cloud solutions with AWS and application deployment.",
+      "Game development with custom engine, game logic, and 3D animations.",
+      "Creation of cross-platform scripts for infrastructure processes."
+    ],
+    "projects_title": "Projects",
+    "projects": [
+      {
+        "title": "Cost-Effective AWS Server",
+        "description": "From-scratch setup of a Minecraft server on AWS EC2, including ports, automatic backups, and GitHub publication.",
+        "link": "https://github.com/Brollix/minecraft-server"
+      },
+      {
+        "title": "AI Pong Game",
+        "description": "Pong game in C++ with a simple neural network to train the opponent's AI. Implemented from scratch with SDL2.",
+        "link": "https://github.com/Brollix/game-of-pong"
+      },
+      {
+        "title": "FinanzApp – Smart Personal Finance Management",
+        "description": "Team-developed personal finance mobile app that allows users to scan receipts with OCR, automatically extract amounts, and save expenses to a cloud database.",
+        "link": "https://github.com/Brollix/finanzapp"
+      }
+    ],
+    "skills_title": "Technical Skills",
+    "skills": [
+      {
+        "title": "💻 Programming Languages",
+        "items": [
+          "C, C++ — low-level development, system logic, and games",
+          "JavaScript — pure frontend projects, animations with Three.js",
+          "Python — scripting, OCR, text and image processing"
+        ]
+      },
+      {
+        "title": "🖥️ Systems and Environments",
+        "items": [
+          "Linux — daily use, bash scripting, general administration",
+          "Windows Server — installation, configuration, and maintenance",
+          "Git / GitHub — branch workflow, releases, documentation"
+        ]
+      },
+      {
+        "title": "🌐 Infrastructure and Networking",
+        "items": [
+          "Switch and LAN configuration",
+          "IT infrastructure management in real environments",
+          "Diagnostics, maintenance, and comprehensive technical support"
+        ]
+      },
+      {
+        "title": "☁️ Cloud and Automation",
+        "items": [
+          "AWS — EC2, S3, IAM, Lambda, Lightsail, GitHub Pages",
+          "Backup automation and server deployment",
+          "Server optimization for cost, availability, and security"
+        ]
+      },
+      {
+        "title": "🧠 Artificial Intelligence and Computing",
+        "items": [
+          "Neural network implementation from scratch (no frameworks)",
+          "Evolutionary algorithms: fitness, mutation, selection",
+          "GPT-4 / LLM model integration for semantic analysis"
+        ]
+      },
+      {
+        "title": "🛠️ Tools and Technologies",
+        "items": [
+          "SDL2 / SFML — C++ game development",
+          "React Native (Expo) — cross-platform mobile interfaces",
+          "Supabase — database, authentication, and REST API",
+          "PaddleOCR — text extraction from images (Python)",
+          "Three.js — 3D web animations",
+          "Shell scripting — Bash, CMD, PowerShell"
+        ]
+      }
+    ],
+    "contact_title": "Contact",
+    "email": "Email",
+    "linkedin": "LinkedIn",
+    "github": "GitHub",
+    "copyright": "© 2025 Agustín Brollo"
+  }
+}
