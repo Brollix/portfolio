@@ -1,71 +1,211 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title data-i18n="title">Agustín Brollo | IT Specialist</title>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-    rel="stylesheet">
+  <title>Agustín Brollo | Especialista en IT</title>
+  <meta name="description"
+    content="Especialista en IT e infraestructura. Desarrollo C/C++, Three.js, proyectos como FinanzApp. Contacto y CV en ES/EN.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Agustín Brollo | Especialista en IT">
+  <meta property="og:description"
+    content="Infraestructura, automatización, C/C++, Three.js y proyectos. Contacto y CV.">
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
+  <a href="#sobre-mi" class="skip-link" data-i18n="skip">Saltar a contenido</a>
   <canvas id="bg"></canvas>
   <header>
-    <div class="header-content">
-      <h1>Agustín Brollo</h1>
-      <p data-i18n="job_title">IT Specialist</p>
-      <nav>
-        <ul>
-          <li><a href="#sobre-mi" data-i18n="nav_about">About Me</a></li>
-          <li><a href="#experiencia" data-i18n="nav_experience">Experience</a></li>
-          <li><a href="#proyectos" data-i18n="nav_projects">Projects</a></li>
-          <li><a href="#habilidades" data-i18n="nav_skills">Skills</a></li>
-          <li><a href="#contacto" data-i18n="nav_contact">Contact</a></li>
+    <h1 data-i18n="name">Agustín Brollo</h1>
+    <p data-i18n="role">Especialista en IT</p>
+    <nav>
+      <div class="nav-container">
+        <ul class="nav-left">
+          <li><a href="#sobre-mi" data-i18n="nav.about">Sobre mí</a></li>
+          <li><a href="#experiencia" data-i18n="nav.experience">Experiencia</a></li>
+          <li><a href="#proyectos" data-i18n="nav.projects">Proyectos</a></li>
+          <li><a href="#habilidades" data-i18n="nav.skills">Habilidades</a></li>
+          <li><a href="#contacto" data-i18n="nav.contact">Contacto</a></li>
         </ul>
-      </nav>
-      <div class="language-toggle">
-        <a href="#" id="language-toggle">EN</a>
+        <div class="nav-right">
+          <a id="cv-button" class="btn" href="CV_2025_SPA.pdf" download data-i18n="contact.cv_es">Descargar CV (ES)</a>
+          <label for="lang-select" class="visually-hidden">Idioma</label>
+          <select id="lang-select" aria-label="Idioma">
+            <option value="es">ES</option>
+            <option value="en">EN</option>
+          </select>
+        </div>
       </div>
-    </div>
+    </nav>
   </header>
 
   <main>
+
     <section id="sobre-mi">
-      <h2 data-i18n="about_title">About Me</h2>
+      <h2 data-i18n="about.title">Sobre mí</h2>
+
       <div class="about-container">
-        <p data-i18n="about_text1"></p>
-        <p data-i18n="about_text2"></p>
-        <p data-i18n="about_text3"></p>
+        <p data-i18n="about.p1">
+          Soy un especialista en IT con sólida experiencia en infraestructura, soporte técnico y administración de
+          redes. Me formé en entornos corporativos exigentes, como <strong>HCL Technologies</strong>, donde gestioné
+          redes, configuraciones de switches y tareas de mantenimiento crítico en sistemas empresariales.
+        </p>
+        <p data-i18n="about.p2">
+          También me desempeño como desarrollador independiente, con foco en C/C++, automatización en Linux, desarrollo
+          de herramientas personalizadas y videojuegos con motor propio. En mis proyectos combino la lógica técnica con
+          una mentalidad práctica y resolutiva.
+        </p>
+        <p data-i18n="about.p3">
+          Actualmente estoy desarrollando <strong>finanzapp</strong>, una app móvil de gestión de gastos basada en OCR y
+          análisis inteligente, y mantengo un portfolio activo de proyectos personales publicados en GitHub.
+        </p>
       </div>
     </section>
-    
+
     <section id="experiencia">
-      <!-- Se llenará dinámicamente por JavaScript -->
+      <h2 data-i18n="experience.title">Experiencia en IT</h2>
+
+      <div class="experience-block">
+        <h3 data-i18n="experience.corp.title">Especialista IT – Entorno corporativo</h3>
+        <p><em data-i18n="experience.corp.subtitle">Administrador de redes y soporte técnico</em></p>
+        <ul>
+          <li data-i18n="experience.corp.li1">Configuración, diagnóstico y mantenimiento de switches de red.</li>
+          <li data-i18n="experience.corp.li2">Gestión de infraestructura IT en entornos corporativos con múltiples
+            niveles de usuario.</li>
+          <li data-i18n="experience.corp.li3">Resolución de incidentes técnicos, soporte a usuarios y documentación de
+            procesos.</li>
+          <li data-i18n="experience.corp.li4">Monitoreo de redes, backups y tareas programadas en sistemas críticos.
+          </li>
+        </ul>
+      </div>
+
+      <div class="experience-block">
+        <h3 data-i18n="experience.freelance.title">Freelance y entornos mixtos</h3>
+        <p><em data-i18n="experience.freelance.subtitle">Soporte técnico, desarrollo y automatización</em></p>
+        <ul>
+          <li data-i18n="experience.freelance.li1">Soporte integral en sistemas Windows y Linux.</li>
+          <li data-i18n="experience.freelance.li2">Armado y mantenimiento de estaciones de trabajo para edición y
+            servidores locales.</li>
+          <li data-i18n="experience.freelance.li3">Automatización de tareas con scripts en Bash y PowerShell.</li>
+          <li data-i18n="experience.freelance.li4">Instalación y configuración de redes domésticas y comerciales.</li>
+          <li data-i18n="experience.freelance.li5">Desarrollo de herramientas personalizadas en C/C++ para
+            automatización y optimización.</li>
+          <li data-i18n="experience.freelance.li6">Implementación de soluciones en la nube con AWS y despliegue de
+            aplicaciones.</li>
+          <li data-i18n="experience.freelance.li7">Desarrollo de videojuegos con motor propio, lógica de juego y
+            animaciones 3D.</li>
+          <li data-i18n="experience.freelance.li8">Creación de scripts multiplataforma para procesos de infraestructura.
+          </li>
+        </ul>
+      </div>
     </section>
 
+
     <section id="proyectos">
-      <!-- Se llenará dinámicamente por JavaScript -->
+      <h2 data-i18n="projects.title">Proyectos</h2>
+      <div class="proyecto">
+        <h3><a href="https://github.com/Brollix/minecraft-server" target="_blank" rel="noopener noreferrer"
+            data-i18n="projects.p1.title">Servidor AWS Económico</a></h3>
+        <p data-i18n="projects.p1.desc">Configuración desde cero de un servidor Minecraft en AWS EC2, incluyendo
+          puertos, backups automáticos y publicación en GitHub.</p>
+      </div>
+      <div class="proyecto">
+        <h3><a href="https://github.com/Brollix/game-of-pong" target="_blank" rel="noopener noreferrer"
+            data-i18n="projects.p2.title">Game of Pong con IA</a></h3>
+        <p data-i18n="projects.p2.desc">Juego Pong en C++ con red neuronal simple para entrenar la IA del oponente.
+          Implementación desde cero con SDL2.</p>
+      </div>
+      <div class="proyecto">
+        <h3><a href="https://github.com/Brollix/finanzapp" target="_blank" rel="noopener noreferrer"
+            data-i18n="projects.p3.title">FinanzApp – Gestión inteligente de gastos personales</a></h3>
+        <p data-i18n="projects.p3.desc">FinanzApp es una aplicación móvil de finanzas personales desarrollada en equipo,
+          que permite a los usuarios escanear tickets con OCR, extraer automáticamente los importes y guardar los gastos
+          en una base de datos en la nube. Utiliza procesamiento de imágenes en Python, OCR con PaddleOCR, y
+          almacenamiento estructurado en Supabase. Está diseñada para ser liviana, eficiente y escalable.</p>
+      </div>
     </section>
 
     <section id="habilidades">
-      <!-- Se llenará dinámicamente por JavaScript -->
+      <h2 data-i18n="skills.title">Habilidades Técnicas</h2>
+
+      <div class="skills-block">
+        <h3 data-i18n="skills.langs.title">💻 Lenguajes de programación</h3>
+        <ul>
+          <li data-i18n="skills.langs.li1">C, C++ — desarrollo en bajo nivel, lógica de sistemas y videojuegos</li>
+          <li data-i18n="skills.langs.li2">JavaScript — proyectos frontend puros, animaciones con Three.js</li>
+          <li data-i18n="skills.langs.li3">Python — scripting, OCR, procesamiento de texto e imágenes</li>
+        </ul>
+      </div>
+
+      <div class="skills-block">
+        <h3 data-i18n="skills.systems.title">🖥️ Sistemas y entornos</h3>
+        <ul>
+          <li data-i18n="skills.systems.li1">Linux — uso diario, bash scripting, administración general</li>
+          <li data-i18n="skills.systems.li2">Windows Server — instalación, configuración y mantenimiento</li>
+          <li data-i18n="skills.systems.li3">Git / GitHub — flujo de trabajo con ramas, releases, documentación</li>
+        </ul>
+      </div>
+
+      <div class="skills-block">
+        <h3 data-i18n="skills.networks.title">🌐 Infraestructura y redes</h3>
+        <ul>
+          <li data-i18n="skills.networks.li1">Configuración de switches y redes LAN</li>
+          <li data-i18n="skills.networks.li2">Administración de infraestructura IT en entornos reales</li>
+          <li data-i18n="skills.networks.li3">Diagnóstico, mantenimiento y soporte técnico integral</li>
+        </ul>
+      </div>
+
+      <div class="skills-block">
+        <h3 data-i18n="skills.cloud.title">☁️ Cloud y automatización</h3>
+        <ul>
+          <li data-i18n="skills.cloud.li1">AWS — EC2, S3, IAM, Lambda, Lightsail, GitHub Pages</li>
+          <li data-i18n="skills.cloud.li2">Automatización de backups y despliegue en servidores</li>
+          <li data-i18n="skills.cloud.li3">Optimización de servidores por costo, disponibilidad y seguridad</li>
+        </ul>
+      </div>
+
+      <div class="skills-block">
+        <h3 data-i18n="skills.ai.title">🧠 Inteligencia Artificial y computación</h3>
+        <ul>
+          <li data-i18n="skills.ai.li1">Implementación de redes neuronales desde cero (sin frameworks)</li>
+          <li data-i18n="skills.ai.li2">Algoritmos evolutivos: fitness, mutación, selección</li>
+          <li data-i18n="skills.ai.li3">Integración de modelos GPT-4 / LLM para análisis semántico</li>
+        </ul>
+      </div>
+
+      <div class="skills-block">
+        <h3 data-i18n="skills.tools.title">🛠️ Herramientas y tecnologías</h3>
+        <ul>
+          <li data-i18n="skills.tools.li1">SDL2 / SFML — desarrollo de videojuegos en C++</li>
+          <li data-i18n="skills.tools.li2">React Native (Expo) — interfaces móviles multiplataforma</li>
+          <li data-i18n="skills.tools.li3">Supabase — base de datos, autenticación y REST API</li>
+          <li data-i18n="skills.tools.li4">PaddleOCR — extracción de texto desde imágenes (Python)</li>
+          <li data-i18n="skills.tools.li5">Three.js — animaciones 3D en la web</li>
+          <li data-i18n="skills.tools.li6">Shell scripting — Bash, CMD, PowerShell</li>
+        </ul>
+      </div>
     </section>
 
     <section id="contacto">
-      <h2 data-i18n="contact_title">Contact</h2>
-      <p><span data-i18n="email">Email</span>: <a href="mailto:brolloagus@gmail.com">brolloagus@gmail.com</a></p>
-      <p><span data-i18n="linkedin">LinkedIn</span>: <a href="https://www.linkedin.com/in/agusbrollo/" target="_blank">/agusbrollo</a></p>
-      <p><span data-i18n="github">GitHub</span>: <a href="https://github.com/Brollix" target="_blank">/Brollix</a></p>
+      <h2 data-i18n="contact.title">Contacto</h2>
+      <p>Email: <a href="mailto:brolloagus@gmail.com">brolloagus@gmail.com</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/agusbrollo/" target="_blank"
+          rel="noopener noreferrer">/agusbrollo</a></p>
+      <p>GitHub: <a href="https://github.com/Brollix" target="_blank" rel="noopener noreferrer">/Brollix</a></p>
     </section>
   </main>
 
   <footer>
-    <p data-i18n="copyright">© 2025 Agustín Brollo</p>
+    <p>&copy; 2025 Agustín Brollo</p>
   </footer>
 
   <script src="three.min.js"></script>
   <script defer src="background.js"></script>
   <script defer src="main.js"></script>
 </body>
+
 </html>

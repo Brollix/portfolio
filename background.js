@@ -1,4 +1,7 @@
 window.addEventListener("DOMContentLoaded", () => {
+  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (reduceMotion) return; // disable background animation for users who prefer reduced motion
+
   const canvas = document.getElementById("bg");
   const scene = new THREE.Scene();
   const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
@@ -6,11 +9,11 @@ window.addEventListener("DOMContentLoaded", () => {
 
   const renderer = new THREE.WebGLRenderer({
     canvas,
-    alpha: true, // permite ver fondo detrás del canvas
+    alpha: true,
     antialias: true
   });
   renderer.setSize(window.innerWidth, window.innerHeight);
-  renderer.setPixelRatio(window.devicePixelRatio);
+  renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, 1.5));
 
   // Geometría visible: un icosaedro wireframe
   const geometry = new THREE.IcosahedronGeometry(1.5, 1);
@@ -22,7 +25,8 @@ window.addEventListener("DOMContentLoaded", () => {
   scene.add(mesh);
 
   // Partículas
-  const particleCount = 1000;
+  const isMobile = window.innerWidth < 768;
+  const particleCount = isMobile ? 300 : 1000;
   const particlesGeometry = new THREE.BufferGeometry();
   const positions = new Float32Array(particleCount * 3);
   for (let i = 0; i < particleCount * 3; i++) {
@@ -38,13 +42,21 @@ window.addEventListener("DOMContentLoaded", () => {
 
   // Animación
   function animate() {
-    requestAnimationFrame(animate);
-    mesh.rotation.x += 0.005;
-    mesh.rotation.y += 0.005;
-    particles.rotation.y += 0.0005;
+    mesh.rotation.x += 0.0025;
+    mesh.rotation.y += 0.0025;
+    particles.rotation.y += 0.00025;
     renderer.render(scene, camera);
   }
-  animate();
+  renderer.setAnimationLoop(animate);
+
+  // Pausar cuando la pestaña no está visible
+  document.addEventListener('visibilitychange', () => {
+    if (document.hidden) {
+      renderer.setAnimationLoop(null);
+    } else {
+      renderer.setAnimationLoop(animate);
+    }
+  });
 
   // Resizing
   window.addEventListener("resize", () => {

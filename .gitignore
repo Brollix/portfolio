@@ -1,0 +1,12 @@
+CV_2025_SPA.pdf
+CV_2025_ENG.pdf
+*.pdf
+*.txt
+
+# Archivos y carpetas temporales
+.DS_Store
+Thumbs.db
+node_modules/
+dist/
+build/
+*.log
